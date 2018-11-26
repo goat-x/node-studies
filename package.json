@@ -1,0 +1,28 @@
+{
+  "name": "studies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-load": "^1.1.16",
+    "joi": "^14.1.0",
+    "mysql": "^2.16.0",
+    "synchronize": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graciano/node-studies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graciano/node-studies/issues"
+  },
+  "homepage": "https://github.com/graciano/node-studies#readme"
+}
