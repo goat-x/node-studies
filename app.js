@@ -1,16 +1,18 @@
 const express = require('express')
 const load = require('express-load');
-const app = express()
-const httpPort = 3000
+const app = express();
+const httpPort = 3000;
 
-app.listen(httpPort)
+app.listen(httpPort);
 
-const { tituloHtml } = require('./util/html_util.js')
+const { tituloHtml } = require('./util/html_util.js');
 
-const cliente = require('./model/cliente')
-app.use('/cliente', cliente);
+const cliente = require('./routes/cliente');
+app.use((req, res, next) => {
+
+});
 
 // load('./routes/router.js');
 //    .into(app);
 
-console.log(`###### Servidor Iniciado. Porta: ${httpPort} ########`)
+console.log(`###### Servidor Iniciado. Porta: ${httpPort} ########`);
